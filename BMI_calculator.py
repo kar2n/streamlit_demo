@@ -2,19 +2,18 @@
 import streamlit as st
 
 # Title
-st.title("Hello GeeksForGeeks !!!")
+st.title("BMI calculator")
 
-# Header
-st.header("This is a header") 
+# Input weight
+weight = st.number_input("Enter your weight (in kg)") 
 
-# Subheader
-st.subheader("This is a subheader")
+# Input height
+# radio button to choose format
+status = st.radio('Select your height format: ',
+                 'cms', 'meters', 'feet'))
 
-# Text
-st.text("Hello GeeksForGeeks !!!")
 
-# Markdown
-st.markdown("### This is a markdown")
+
 
 # success
 st.success("Success")

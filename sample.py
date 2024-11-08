@@ -38,10 +38,10 @@ st.write("Text with write")
 # Writing python inbuilt function range()
 st.write(range(10))
 
-# import Image from pillow to open images
-from PIL import Image
-img = Image.open("streamlit.png")
+# checkbox
+# check if the checkbox is checked
+# title of the checkbox is 'Show/Hide'
+if st.checkbox("Show/Hide"):
 
-# display image using streamlit
-# width is used to set the width of an image
-st.image(img, width=200)
+    # display the text if the checkbox returns True value
+    st.text("Showing the widget")

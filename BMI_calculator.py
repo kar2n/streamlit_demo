@@ -2,15 +2,15 @@
 import streamlit as st
 
 # Title
-st.title("BMI calculator")
+st.title('BMI calculator')
 
 # Input weight
-weight = st.number_input("Enter your weight (in kg)") 
+weight = st.number_input("Enter your weight (in kgs)") 
 
 # Input height
 # radio button to choose format
 status = st.radio('Select your height format: ',
-                 'cms', 'meters', 'feet'))
+                  ('cms', 'meters', 'feet'))
 
 
 

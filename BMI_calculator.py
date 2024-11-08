@@ -41,5 +41,5 @@ else:
 # check if the button is pressed or not
 if(st.button('Calculate BMI')):
 
-# print the BMI INDEX
-st.text("Your BMI Index is {}.".format(bmi))
+  # print the BMI INDEX
+  st.text("Your BMI Index is {}.".format(bmi))

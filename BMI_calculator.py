@@ -12,24 +12,33 @@ weight = st.number_input("Enter your weight (in kgs)")
 status = st.radio('Select your height format: ',
                   ('cms', 'meters', 'feet'))
 
+# compare status
+if(status == 'cms'):
+  height = st.number_input('Centimeters')
+
+  try:
+    bmi = weight / ((height/100)** 2)
+  except:
+    st.text("Enter some value of height")
+
+elif(status == 'meters'):
+  height = st.number_input('Meters')
+
+  try:
+    bmi = weight / (height ** 2)
+  except:
+    st.text("Enter some value of height") 
+
+else:
+  heigh = st.number_input('Feet')
+
+# 1 meter = 3.28
+  try:
+    bmi = weight / (((height/3.28))** 2)
+  except:
+    st.text("Enter some value of height")
 
 
-
-# success
-st.success("Success")
-
-# success
-st.info("Information")
-
-# success
-st.warning("Warning")
-
-# success
-st.error("Error")
-
-# Exception - This has been added later
-exp = ZeroDivisionError("Trying to divide by Zero")
-st.exception(exp)
 
 # Write text
 st.write("Text with write")

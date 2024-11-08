@@ -51,7 +51,7 @@ elif(bmi >= 16 and bmi < 18.5):
   st.warning("You are Underweight")
 elif(bmi >= 18.5 and bmi < 25):
   st.success("Healthy")
-    elif(bmi >= 25 and bmi < 30):
-        st.warning("Overweight")
-    elif(bmi >= 30):
-        st.error("Extremely Overweight")
+elif(bmi >= 25 and bmi < 30):
+  st.warning("Overweight")
+elif(bmi >= 30):
+  st.error("Extremely Overweight")

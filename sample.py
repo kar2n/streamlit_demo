@@ -15,3 +15,19 @@ st.text("Hello GeeksForGeeks !!!")
 
 # Markdown
 st.markdown("### This is a markdown")
+
+# success
+st.success("Success")
+
+# success
+st.info("Information")
+
+# success
+st.warning("Warning")
+
+# success
+st.error("Error")
+
+# Exception - This has been added later
+exp = ZeroDivisionError("Trying to divide by Zero")
+st.exception(exp)

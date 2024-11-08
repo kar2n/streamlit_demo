@@ -31,3 +31,9 @@ st.error("Error")
 # Exception - This has been added later
 exp = ZeroDivisionError("Trying to divide by Zero")
 st.exception(exp)
+
+# Write text
+st.write("Text with write")
+
+# Writing python inbuilt function range()
+st.write(range(10))

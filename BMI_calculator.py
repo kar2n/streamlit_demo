@@ -45,12 +45,12 @@ if(st.button('Calculate BMI')):
   st.text("Your BMI Index is {}.".format(bmi))
 
 # give the interpretation of BMI index
-    if(bmi < 16):
-        st.error("You are Extremely Underweight")
-    elif(bmi >= 16 and bmi < 18.5):
-        st.warning("You are Underweight")
-    elif(bmi >= 18.5 and bmi < 25):
-        st.success("Healthy")
+if(bmi < 16):
+  st.error("You are Extremely Underweight")
+elif(bmi >= 16 and bmi < 18.5):
+  st.warning("You are Underweight")
+elif(bmi >= 18.5 and bmi < 25):
+  st.success("Healthy")
     elif(bmi >= 25 and bmi < 30):
         st.warning("Overweight")
     elif(bmi >= 30):
